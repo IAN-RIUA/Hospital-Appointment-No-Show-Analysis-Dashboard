@@ -1,5 +1,5 @@
 # app.py
-# 🏥 Hospital Appointment No-Show Analysis Dashboard
+# Hospital Appointment No-Show Analysis Dashboard
 
 import streamlit as st
 import pandas as pd
@@ -8,13 +8,13 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Hospital Appointment Dashboard", layout="wide")
 
-st.title("🏥 Hospital Appointment No-Show Dashboard")
+st.title("Hospital Appointment No-Show Dashboard")
 st.markdown("""
 Analyze hospital appointment data to identify trends and reduce patient no-shows.
 """)
 
 # --- File Upload ---
-uploaded_file = st.file_uploader("📂 Upload appointment dataset (CSV)", type=["csv"])
+uploaded_file = st.file_uploader("Upload appointment dataset (CSV)", type=["csv"])
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
@@ -35,7 +35,7 @@ if uploaded_file:
     no_show_rate = df['No_show'].mean() * 100
     avg_wait = df['WaitingDays'].mean()
 
-    st.subheader("📊 Summary Metrics")
+    st.subheader("Summary Metrics")
     col1, col2, col3 = st.columns(3)
     col1.metric("Total Appointments", f"{total_appointments:,}")
     col2.metric("No-Show Rate", f"{no_show_rate:.1f}%")
@@ -44,7 +44,7 @@ if uploaded_file:
     st.divider()
 
     # --- Filters ---
-    st.sidebar.header("🔍 Filters")
+    st.sidebar.header("Filters")
     gender_filter = st.sidebar.selectbox("Filter by Gender", options=["All"] + list(df["Gender"].unique()))
     if gender_filter != "All":
         df = df[df["Gender"] == gender_filter]
@@ -59,7 +59,7 @@ if uploaded_file:
     st.sidebar.caption("Filters help you explore different patient segments.")
 
     # --- Visual Insights ---
-    st.subheader("📈 Visual Insights")
+    st.subheader("Visual Insights")
 
     col1, col2 = st.columns(2)
 
@@ -79,7 +79,7 @@ if uploaded_file:
         st.pyplot(fig)
 
     # --- Age & Waiting Days ---
-    st.subheader("📉 Age & Waiting Time Insights")
+    st.subheader(" Age & Waiting Time Insights")
 
     col3, col4 = st.columns(2)
 
@@ -96,7 +96,7 @@ if uploaded_file:
         st.pyplot(fig)
 
     # --- Insights Summary ---
-    st.subheader("🧠 Insights Summary")
+    st.subheader("Insights Summary")
     st.markdown(f"""
     - **Overall no-show rate:** {no_show_rate:.1f}%  
     - **SMS reminders:** Patients with SMS are far less likely to miss appointments.  
@@ -104,7 +104,7 @@ if uploaded_file:
     - **Age trend:** Youth and elderly show higher absence rates.  
     """)
 
-    st.success("✅ Tip: Use SMS reminders and shorter scheduling windows to reduce no-shows in Kenyan hospitals.")
+    st.success("Tip: Use SMS reminders and shorter scheduling windows to reduce no-shows in Kenyan hospitals.")
 
 else:
-    st.info("👆 Upload your dataset to begin analysis.")
+    st.info(" Upload your dataset to begin analysis.")
