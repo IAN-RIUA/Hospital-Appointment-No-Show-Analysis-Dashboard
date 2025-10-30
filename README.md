@@ -1,3 +1,9 @@
+---
+noteId: "d9ca71a0b55b11f087cea5c679dccd3f"
+tags: []
+
+---
+
 # 🏥 Hospital Appointment No-Show Analysis Dashboard
 
 This project analyzes hospital appointment data to uncover the factors that lead to patient no-shows.  
