@@ -1,61 +1,116 @@
----
-noteId: "d9ca71a0b55b11f087cea5c679dccd3f"
-tags: []
+🏥 Hospital Appointment No-Show Analysis Dashboard
 
----
+Data Analysis | Healthcare Analytics | Python | Streamlit
 
-# 🏥 Hospital Appointment No-Show Analysis Dashboard
+Missed hospital appointments create operational inefficiencies, increase costs, and delay patient care.
+This project analyzes 100,000+ hospital appointment records to identify the key drivers of patient no-shows and presents actionable insights through an interactive dashboard.
 
-This project analyzes hospital appointment data to uncover the factors that lead to patient no-shows.  
-It helps hospitals improve scheduling efficiency, reduce missed appointments, and enhance patient care through data-driven insights.
+Designed to demonstrate end-to-end data analytics skills — from data cleaning and exploration to visualization and stakeholder-ready reporting.
 
----
+💼 Why This Project Matters
 
-## 📊 Project Overview
+Recruiters and hiring managers can quickly see evidence of:
 
-Missed appointments ("no-shows") are a common challenge in healthcare facilities, leading to resource waste and delayed treatments.  
-This dashboard explores trends in patient attendance and provides insights hospitals can use to reduce no-show rates.
+Real-world problem-solving with data
 
----
+Strong exploratory data analysis (EDA) skills
 
-## 🎯 Objectives
+Clear business and operational impact
 
-- Identify patterns that influence patient no-shows.  
-- Analyze demographic factors such as **age** and **gender**.  
-- Evaluate the impact of **SMS reminders** on attendance.  
-- Build an **interactive dashboard** for easy exploration.
+Ability to translate insights into decision-ready dashboards
 
----
+🔍 Business Questions Answered
 
-## 🧠 Dataset
+Which patient groups are more likely to miss appointments?
 
-The dataset (`medical appointment.csv`) contains over **100,000 appointment records** with the following key columns:
+Does receiving an SMS reminder reduce no-show rates?
 
-| Column | Description |
-|--------|--------------|
-| `PatientID` | Unique identifier for each patient |
-| `Gender` | Patient gender |
-| `Age` | Age of the patient |
-| `AppointmentDay` | Date of the appointment |
-| `SMS_received` | Whether the patient received an SMS reminder |
-| `No-show` | Whether the patient missed the appointment |
+How do age, gender, and appointment timing influence attendance?
 
-> **Source:** Public dataset from Kaggle – *Hospital Appointment No Show Dataset.*
+What actionable steps can hospitals take to improve scheduling efficiency?
 
----
+📊 Dataset Overview
 
-## 🧰 Tools & Technologies
+Source: Kaggle – Hospital Appointment No Show Dataset
 
-- **Python** – Data cleaning and analysis (`Pandas`, `NumPy`)
-- **Streamlit** – Interactive web dashboard
-- **Matplotlib & Seaborn** – Data visualization
-- **Power BI** *(optional)* – Additional interactive reporting
-- **GitHub** – Version control and project hosting
+Size: 100,000+ appointment records
 
----
+Key Fields:
 
-## 🚀 How to Run the Streamlit App
+Feature	Description
+PatientID	Unique patient identifier
+Gender	Patient gender
+Age	Patient age
+AppointmentDay	Scheduled appointment date
+SMS_received	SMS reminder status
+No-show	Appointment attendance outcome
+🧠 Key Insights
 
-1. Clone this repository  
-   ```bash
-   git clone https://github.com/IAN-RIUA/Hospital-Appointment-No-Show-Analysis-Dashboard.git
+Younger patients showed higher no-show rates than older age groups
+
+Patients who received SMS reminders were more likely to attend
+
+Appointment attendance varied by day of the week
+
+Clear demographic trends enable targeted intervention strategies
+
+🛠️ Technical Skills Demonstrated
+
+Data Analysis
+
+Data cleaning and preprocessing using Pandas
+
+Exploratory data analysis (EDA)
+
+Feature grouping and aggregation
+
+Trend and pattern identification
+
+Visualization & Reporting
+
+Visual storytelling with Matplotlib & Seaborn
+
+Interactive dashboards using Streamlit
+
+Optional advanced reporting with Power BI
+
+Tools
+
+Python
+
+Git & GitHub
+
+Streamlit Cloud (deployment-ready)
+
+🚀 How to Run the Project
+git clone https://github.com/IAN-RIUA/Hospital-Appointment-No-Show-Analysis-Dashboard.git
+cd Hospital-Appointment-No-Show-Analysis-Dashboard
+pip install -r requirements.txt
+streamlit run app.py
+
+📈 Impact & Recommendations
+
+Based on the analysis, hospitals could:
+
+Implement targeted SMS reminders for high-risk groups
+
+Adjust scheduling strategies based on attendance trends
+
+Prioritize follow-ups for patients with repeated no-shows
+
+🔮 Future Enhancements
+
+Predictive modeling for no-show probability
+
+Appointment lead-time impact analysis
+
+Cloud deployment for live access
+
+Role-based dashboard views for hospital staff
+
+👤 About the Author
+
+Ian Riua Muriu
+Aspiring Data Analyst | Healthcare Analytics | Business Intelligence
+
+🔗 GitHub: https://github.com/IAN-RIUA
