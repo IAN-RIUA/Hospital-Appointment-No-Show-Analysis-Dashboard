@@ -25,7 +25,7 @@ Which patient groups are more likely to miss appointments?
 
 Does receiving an SMS reminder reduce no-show rates?
 
-How do age, gender, and appointment timing influence attendance?
+How do age, gender and appointment timing influence attendance?
 
 What actionable steps can hospitals take to improve scheduling efficiency?
 
